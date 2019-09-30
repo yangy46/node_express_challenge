@@ -1,4 +1,4 @@
-//const db = require('sqlite3');
+//const db = require('sqlite3'); // not familar with sqlite module
 
 class Trade {
     constructor({ type = '', user, symbol = '', shares = 0, price = 0 }) {
