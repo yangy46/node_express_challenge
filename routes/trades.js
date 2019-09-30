@@ -4,9 +4,9 @@ var trades = require('../controllers/trades');
 
 // Routes related to trades
 router.post('/', async (req, res, next) => {
-
-    console.log('executing POST /trades');
     
+    console.log('executing POST /trades');
+
     try {
         
         // check exists
