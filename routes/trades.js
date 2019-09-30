@@ -3,12 +3,8 @@ var router = express.Router();
 var trades = require('../controllers/trades');
 
 // Routes related to trades
-router.post('/trade', async (req, res, next) => {
-    
-    res.status(201);
-    res.send();
-    return;
-    
+router.post('/', async (req, res, next) => {
+        
     try {
         // check exists
         let trade = req.body,
@@ -33,7 +29,7 @@ router.post('/trade', async (req, res, next) => {
     
 });
 
-router.get('/trades', async (req, res, next) => {
+router.get('/', async (req, res, next) => {
     
     try {
         let data = await trades.getAll();
